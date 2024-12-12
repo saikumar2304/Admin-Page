@@ -1,0 +1,47 @@
+/* src/components/Sidebar.css */
+
+.sidebar-container {
+    background: #7a5a9c;
+    width: 250px;
+    height: calc(100vh - 80px); /* Full height minus header */
+    overflow-y: auto;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    color: white;
+    transition: transform 0.3s ease;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure it stays above main content */
+  }
+  
+  .sidebar-container.closed {
+    transform: translateX(-100%); /* Fully hide sidebar when closed */
+  }
+  
+  .sidebar-container.open {
+    transform: translateX(0);
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin: 5px 0;
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background 0.3s, transform 0.2s;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .sidebar-item:hover {
+    background: #a084c1;
+    transform: translateX(5px);
+  }
+  
+  .sidebar-icon {
+    margin-right: 10px;
+    font-size: 1.3em;
+  }
+  

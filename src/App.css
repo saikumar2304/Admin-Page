@@ -1,0 +1,28 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f0fc;
+  color: #4b3b73;
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-grow: 1; /* Allow content to grow to full width */
+}
+
+.sidebar-open .main-container {
+  margin-left: 250px; /* Adjust for sidebar width when open */
+}
+
+.sidebar-closed .main-container {
+  margin-left: 0; /* Full width when sidebar is closed */
+}

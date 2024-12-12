@@ -1,0 +1,90 @@
+/* src/components/Header.css */
+
+.header-container {
+    background-color: #c5a3e0;
+    color: #4b3b73;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.hamburger-icon {
+    font-size: 1.8em;
+    color: #4b3b73;
+    cursor: pointer;
+}
+
+.header-title {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #4b3b73;
+    margin: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative; /* Needed for dropdown positioning */
+}
+
+.notification-icon {
+    font-size: 1.3em;
+    color: #4b3b73;
+    cursor: pointer;
+}
+
+.welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.welcome-message span {
+    font-size: 0.9em;
+    color: #4b3b73;
+}
+
+.welcome-message small {
+    font-size: 0.7em;
+    color: #6c567b;
+}
+
+/* Dropdown Menu for Logout */
+.logout-dropdown {
+    position: absolute;
+    top: 100%; /* Position below the user-info section */
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 5px;
+    z-index: 20;
+}
+
+.logout-dropdown button {
+    background-color: #f8f9fa;
+    color: #4b3b73;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+}
+
+.logout-dropdown button:hover {
+    background-color: #e0e0e0; /* Hover effect */
+}

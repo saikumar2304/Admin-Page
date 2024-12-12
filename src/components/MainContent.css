@@ -1,0 +1,15 @@
+/* src/components/MainContent.css */
+
+.main-container {
+    flex-grow: 1;
+    padding: 30px 40px; /* Added padding for left and right */
+    background-color: #f4f0fc;
+    min-height: calc(100vh - 80px); /* Full height minus header */
+    overflow-y: auto;
+    margin-top: 90px; /* Extra space below header */
+    box-sizing: border-box;
+    max-width: 1200px; /* Center the content within this width */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
